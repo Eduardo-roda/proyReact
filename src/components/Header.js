@@ -1,4 +1,4 @@
-
+import logo from '../../src/assets/img/logo.png';
 import React from 'react'
 import { Link } from 'react-router-dom';
 
@@ -13,7 +13,7 @@ const Header = () => {
                             
                             <div className="site-logo">
                                 <Link to="/">
-                                    <img src="" alt="logo-hamburguesa" className="logo-hamburguesa"/>
+                                    <img src={logo} alt="logo-hamburguesa" className="logo-hamburguesa"/>
                                 </Link>
                             </div>
                             
