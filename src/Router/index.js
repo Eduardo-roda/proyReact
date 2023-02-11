@@ -14,7 +14,7 @@ const Router =()=>{
     return (
         <BrowserRouter>
         {/*rutas publicas*/}
-            <PreLoader />
+          
             <Header />
                 <Routes>
                     <Route path="/"                     element={<Home />}      />
