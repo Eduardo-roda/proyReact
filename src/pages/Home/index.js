@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 
 
 import Features from '../../components/ComHome/Features';
-import Slider from "../../components/ComHome/Slider";
+import Carrousel from "../../components/ComHome/Carrousel";
 import CartBanner from "../../components/ComHome/CartBanner";
 
 const Home = () => {
 
   return (
     <div>
-      <Slider />
+      <Carrousel />
       <Features />
       <div className="product-section mt-150 mb-150">
         <div className="container">

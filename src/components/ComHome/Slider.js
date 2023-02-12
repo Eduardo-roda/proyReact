@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Slider = () => {
   return (
+	
     <div className="single-homepage-slider homepage-bg-1">
 			<div className="container">
 				<div className="row">

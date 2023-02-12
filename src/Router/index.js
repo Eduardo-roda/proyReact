@@ -14,7 +14,6 @@ const Router =()=>{
     return (
         <BrowserRouter>
         {/*rutas publicas*/}
-          
             <Header />
                 <Routes>
                     <Route path="/"                     element={<Home />}      />
