@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import PreLoader from "../components/PreLoader";
+/*import PreLoader from "../components/PreLoader";*/
 import Copyright from "../components/Copyright";
 
 import Carrito from "../pages/Carrito";
@@ -17,9 +17,9 @@ const Router =()=>{
             <Header />
                 <Routes>
                     <Route path="/"                     element={<Home />}      />
-                    <Route path="Carrito"               element={<Carrito />}   />
-                    <Route path="Shop"                  element={<Shop />}      />
-                    <Route path="Checkout"              element={<Checkout />}  />
+                    <Route path="carrito"               element={<Carrito />}   />
+                    <Route path="shop"                  element={<Shop />}      />
+                    <Route path="checkout"              element={<Checkout />}  />
                 </Routes>
             <Footer />
             <Copyright />

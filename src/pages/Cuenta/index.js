@@ -1,12 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-import BannerCuenta from '../../components/ComCuenta/BannerCuenta';
-
 const Checkout = () => {
   return (
-    <div>
-      <BannerCuenta />
+    <section>
+      <div className="breadcrumb-section breadcrumb-bg">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 offset-lg-2 text-center">
+              <div className="breadcrumb-text">
+                <p>Ultimo paso para recibir tu comida</p>
+                <h1>Datos de Envío</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="checkout-section mt-150 mb-150">
         <div className="container">
           <div className="row">
@@ -26,10 +35,10 @@ const Checkout = () => {
                       <div className="card-body">
                         <div className="billing-address-form">
                           <form action="index.html">
-                            <p><input type="text" placeholder="Nombre"/></p>
-                            <p><input type="email" placeholder="Email"/></p>
-                            <p><input type="text" placeholder="Direccion"/></p>
-                            <p><input type="tel" placeholder="Celular"/></p>
+                            <p><input type="text" placeholder="Nombre" /></p>
+                            <p><input type="email" placeholder="Email" /></p>
+                            <p><input type="text" placeholder="Direccion" /></p>
+                            <p><input type="tel" placeholder="Celular" /></p>
                             <p><textarea name="bill" id="bill" cols="30" rows="10" placeholder="Comentario"></textarea></p>
                           </form>
                         </div>
@@ -105,7 +114,7 @@ const Checkout = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

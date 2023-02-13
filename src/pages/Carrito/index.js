@@ -1,4 +1,8 @@
-import React from 'react'
+import img1 from '../../assets/img/products/product-img-1.jpg';
+import img2 from '../../assets/img/products/product-img-2.jpg';
+import img3 from '../../assets/img/products/product-img-3.jpg';
+
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Carrito = () => {
@@ -35,7 +39,7 @@ const Carrito = () => {
                   <tbody>
                     <tr className="table-body-row">
                       <td className="product-remove"><Link to="#"><i className="far fa-window-close"></i></Link></td>
-                      <td className="product-image"><img src="assets/img/products/product-img-1.jpg" alt="" /></td>
+                      <td className="product-image"><img src={img1} alt="HS" /></td>
                       <td className="product-name">Hamburguesa simple</td>
                       <td className="product-price">S/15</td>
                       <td className="product-quantity"><input type="number" placeholder="0" /></td>
@@ -43,7 +47,7 @@ const Carrito = () => {
                     </tr>
                     <tr className="table-body-row">
                       <td className="product-remove"><Link to="#"><i className="far fa-window-close"></i></Link></td>
-                      <td className="product-image"><img src="assets/img/products/product-img-2.jpg" alt="" /></td>
+                      <td className="product-image"><img src={img2} alt="HCQ" /></td>
                       <td class="product-name">Hamburguesa con queso</td>
                       <td className="product-price">S/20</td>
                       <td className="product-quantity"><input type="number" placeholder="0" /></td>
@@ -51,7 +55,7 @@ const Carrito = () => {
                     </tr>
                     <tr className="table-body-row">
                       <td className="product-remove"><Link to="#"><i className="far fa-window-close"></i></Link></td>
-                      <td className="product-image"><img src="assets/img/products/product-img-3.jpg" alt="" /></td>
+                      <td className="product-image"><img src={img3} alt="HD" /></td>
                       <td className="product-name">hamburguesa doble</td>
                       <td className="product-price">S/35</td>
                       <td className="product-quantity"><input type="number" placeholder="0" /></td>
@@ -87,8 +91,8 @@ const Carrito = () => {
                   </tbody>
                 </table>
                 <div className="cart-buttons">
-                  <Link to="./Shop" class="boxed-btn">Agregar productos</Link>
-                  <Link to="./Checkout" class="boxed-btn black">Siguiente</Link>
+                  <Link to="./shop" class="boxed-btn">Agregar productos</Link>
+                  <Link to="./checkout" class="boxed-btn black">Siguiente</Link>
                 </div>
               </div>
             </div>

@@ -1,3 +1,4 @@
+import ms from '../../assets/img/a.jpg';
 import React from 'react'
 import { Link } from 'react-router-dom';
 
@@ -16,7 +17,7 @@ const CartBanner = () => {
                   </span>
                 </div>
               </div>
-              <img src="assets/img/a.jpg" alt="" />
+              <img src={ms} alt="Milkshake de Fresa" />
             </div>
           </div>
 
@@ -49,7 +50,7 @@ const CartBanner = () => {
                 </div>
               </div>
             </div>
-            <Link to="cart.html" class="cart-btn mt-3"><i class="fas fa-shopping-cart"></i>Añadir al carrito</Link>
+            <Link to="./Carrito" class="cart-btn mt-3"><i class="fas fa-shopping-cart"></i>Añadir al carrito</Link>
           </div>
         </div>
       </div>

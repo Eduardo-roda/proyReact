@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import banner1 from '../../assets/img/banner1.jpg';
 import banner2 from '../../assets/img/banner2.jpg';
 import banner3 from '../../assets/img/banner3.jpg';
@@ -69,7 +71,7 @@ function Carrousel() {
 					<div className="col-md-12 col-lg-7 offset-lg-1 offset-xl-0">
 						<div className="hero-text">
 							<div className="hero-text-tablecell">
-                                <p class="subtitle">Mega descuento por verano!</p>
+                  <p class="subtitle">Mega descuento por verano!</p>
 								<h1>Deliciosas con queso!</h1>
 								<div className="hero-btns">
 									<Link to="./Shop" class="boxed-btn">comprar</Link>
