@@ -16,10 +16,13 @@ const Router =()=>{
         {/*rutas publicas*/}
             <Header />
                 <Routes>
-                    <Route path="/"                     element={<Home />}      />
-                    <Route path="carrito"               element={<Carrito />}   />
-                    <Route path="shop"                  element={<Shop />}      />
-                    <Route path="checkout"              element={<Checkout />}  />
+                    <Route path="/"                         element={<Home />}      />
+                    <Route path="/carrito"                  element={<Carrito />}   />
+                    <Route path="/carrito/shop"             element={<Shop />}      />
+                    <Route path="/shop"                     element={<Shop />}      />
+                    <Route path="/shop/carrito"             element={<Carrito />}   />
+                    <Route path="/shop/carrito/checkout"    element={<Checkout />}  />
+                    <Route path="/carrito/checkout"         element={<Checkout />}  />
                 </Routes>
             <Footer />
             <Copyright />

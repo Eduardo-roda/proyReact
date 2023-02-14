@@ -43,11 +43,11 @@ const Shop = () => {
             <div className="col-lg-4 col-md-6 text-center burger">
               <div className="single-product-item">
                 <div className="product-image">
-                  <Link to="single-product.html"><img src={img1} alt="Hamburguesa simple" /></Link>
+                  <Link to="#"><img src={img1} alt="Hamburguesa simple" /></Link>
                 </div>
                 <h3>Hamburguesa simple</h3>
                 <p className="product-price"><span>Hamburguesa de carne</span> S/ 20 </p>
-                <Link to="./Carrito" class="cart-btn"><i class="fas fa-shopping-cart"></i> Agregar </Link>
+                <Link to="./Carrito" className="cart-btn"><i className="fas fa-shopping-cart"></i> Add to Cart</Link>
               </div>
             </div>
             <div className="col-lg-4 col-md-6 text-center burger">
