@@ -13,12 +13,15 @@ import Features from '../../components/ComHome/Features';
 import Carrousel from "../../components/ComHome/Carrousel";
 import CartBanner from "../../components/ComHome/CartBanner";
 
+
 const Home = () => {
 
   return (
-    <div>
+    <div >
+      
       <Carrousel />
       <Features />
+      
       <div className="product-section mt-150 mb-150">
         <div className="container">
           <div className="row">
