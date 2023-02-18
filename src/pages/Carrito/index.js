@@ -2,10 +2,14 @@ import img1 from '../../assets/img/products/product-img-1.jpg';
 import img2 from '../../assets/img/products/product-img-2.jpg';
 import img3 from '../../assets/img/products/product-img-3.jpg';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import database from '../../App'
 
 const Carrito = () => {
+
+  const [price, setPrice ] = useState(database);
+
   return (
     <section>
       <div className="breadcrumb-section breadcrumb-bg">
@@ -78,7 +82,7 @@ const Carrito = () => {
                   <tbody>
                     <tr className="total-data">
                       <td><strong>Subtotal: </strong></td>
-                      <td>S/100</td>
+                      <td>S/70</td>
                     </tr>
                     <tr className="total-data">
                       <td><strong>Envío: </strong></td>
@@ -86,7 +90,7 @@ const Carrito = () => {
                     </tr>
                     <tr className="total-data">
                       <td><strong>Total: </strong></td>
-                      <td>S/110</td>
+                      <td>S/80</td>
                     </tr>
                   </tbody>
                 </table>

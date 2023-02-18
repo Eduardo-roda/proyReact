@@ -524,7 +524,13 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
 ul.navbar-nav li.nav-item a.nav-link, ul.navbar-nav li.nav-item.active a.nav-link {
   color: #051922;
 }
-
+.img-container{
+  max-height: 90vh !important;
+  height: 100% !important;
+}
+.text-container{
+  width: 80% !important;
+}
 .top-header-area {
   position: absolute;
   z-index: 999;

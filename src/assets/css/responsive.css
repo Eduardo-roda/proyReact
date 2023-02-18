@@ -40,6 +40,11 @@
 }
 /* Tablet Layout: 768px. */
 @media only screen and (min-width: 768px) and (max-width: 991px) { 
+	.text-container{
+		width: 80% !important;
+		max-height: 50vh !important;
+		min-height: 50vh !important;
+	}
 	.hero-text h1 {
 	    font-size: 40px;
 	}
@@ -203,6 +208,12 @@
 
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
+
+	.text-container{
+		width: 80% !important;
+		max-height: 50vh !important;
+		min-height: 50vh !important;
+	}
 
 	.site-logo img {
 	    max-width: 150px;
@@ -559,6 +570,11 @@
 }
 /* Wide Mobile Layout: 480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) { 
+	.text-container{
+		width: 80% !important;
+		max-height: 50vh !important;
+		min-height: 50vh !important;
+	}
 	.hero-area div.hero-form {
 	    margin: 0 auto;
 	    right: auto;
