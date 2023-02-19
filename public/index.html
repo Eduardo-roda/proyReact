@@ -1,63 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Proyecto academico CODIGO" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Proyecto academico CODIGO" />
+    <!-- Primary Meta Tags -->
+    <title>Proyecto Hamburguesa</title>
+    <meta name="title" content="Proyecto Hamburguesa" />
+    <meta
+      name="description"
+      content="Es un proyecto donde le damos innovación a los restaurantes medianos o pequeños para poder tener un mayor alcance de clientes. "
+    />
 
-  <!-- title -->
-  <title>Hamburguesa</title>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://proy-react.vercel.app/" />
+    <meta property="og:title" content="Proyecto Hamburguesa" />
+    <meta
+      property="og:description"
+      content="Es un proyecto donde le damos innovación a los restaurantes medianos o pequeños para poder tener un mayor alcance de clientes. "
+    />
+    <meta property="og:image" content="https://i.postimg.cc/KjCDNjhz/Proy-Restaurante.png" />
 
-  <!-- favicon -->
-  <link rel="shortcut icon" type="image/png" href="./favicon.ico" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://proy-react.vercel.app/" />
+    <meta property="twitter:title" content="Proyecto Hamburguesa" />
+    <meta
+      property="twitter:description"
+      content="Es un proyecto donde le damos innovación a los restaurantes medianos o pequeños para poder tener un mayor alcance de clientes. "
+    />
+    <meta property="twitter:image" content="https://i.postimg.cc/KjCDNjhz/Proy-Restaurante.png" />
 
-  <!--Bootstrap-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <!-- google font -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet" />
-  <!-- fontawesome -->
-  <link rel="stylesheet" href="../src/assets/css/all.min.css" />
- 
-</head>
+    <!-- title -->
+    <title>Hamburguesa</title>
 
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="./favicon.ico" />
 
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="../src/assets/css/all.min.css" />
+  </head>
 
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
 
-
-<body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
-
-
-  
-  <!-- ChatBot - Watson -->
-  <script>
-    window.watsonAssistantChatOptions = {
-      integrationID: "cb7990d5-5816-44bb-ab2e-64e7e4f083af", // The ID of this integration.
-      region: "au-syd", // The region your integration is hosted in.
-      serviceInstanceID: "3500ae2d-9bad-4907-9a04-c28f4a2713e5", // The ID of your service instance.
-      onLoad: function(instance) { instance.render(); }
-    };
-    setTimeout(function(){
-      const t=document.createElement('script');
-      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-      document.head.appendChild(t);
-    });
-  </script>
-  <!-- bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-    crossorigin="anonymous"></script>
-  <!-- fontawesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-
-</body>
-
+    <!-- ChatBot - Watson -->
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "cb7990d5-5816-44bb-ab2e-64e7e4f083af", // The ID of this integration.
+        region: "au-syd", // The region your integration is hosted in.
+        serviceInstanceID: "3500ae2d-9bad-4907-9a04-c28f4a2713e5", // The ID of your service instance.
+        onLoad: function (instance) {
+          instance.render();
+        },
+      };
+      setTimeout(function () {
+        const t = document.createElement("script");
+        t.src =
+          "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+          (window.watsonAssistantChatOptions.clientVersion || "latest") +
+          "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+  </body>
 </html>
